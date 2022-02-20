@@ -1,0 +1,164 @@
+.hidden {
+    display: none;
+}
+:root {
+	--font-color: darkblue;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html { 
+    background: url("../img/bgimg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body {
+    /*background-color: var(--background-color);*/
+    color: 	var(--font-color);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: bold;
+}
+
+.wrap {
+	margin-right: 	30px;
+	margin-left: 	30px;
+	display: flex;
+}
+
+.col1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 	25%;
+	height: 100vh;
+	border-right: 2px solid var(--font-color);
+}
+
+.col1 > * {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.col1 img {
+	display: block;
+	width: 85%;
+	border-radius: 10px;
+}
+
+.col2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 	50%;
+	height: 100vh;
+	border-right: 2px solid var(--font-color);
+}
+
+.col2 > * {
+	margin-bottom: 	20px;
+    width: 85%;
+    text-align: center;
+}
+
+.col3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 	25%;
+	height: 100vh;
+	margin-top: 20px;
+}
+
+.col3 img {
+	display: block;
+	width: 85%;
+	border-radius: 10px;
+}
+
+.col3 > * {
+	width: 85%;
+	text-align: center;
+	border-radius: 10px;
+    margin-top: 20px;
+}
+span {
+    font-size: 20px;
+}
+#greeting {
+    font-size: 60px;
+}
+
+#inputName {
+    width: 40%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid var(--font-color);
+    outline-style: none; 
+    font-size: 20px;
+    text-align: center;
+    background-color: #fffae4;
+    color: var(--font-color);
+}
+#inputName:focus {
+    border-bottom: 5px solid darkgray;
+}
+
+#inputLogin {
+    background-color: var(--font-color);
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.todo {
+    border: 3px solid var(--font-color);
+    background-color: white;
+    box-shadow: 8px 8px;
+}
+
+#inputTodo {
+    width: 50%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline-style: none; 
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--font-color);
+}
+#inputTodo:focus {
+    border-bottom: 3px solid var(--font-color);
+}
+#todo-list {
+    text-align: center;
+}
+li {
+    list-style: none;
+    padding: 6px 0px 6px 0px;
+}
+
+ul li:before{
+    content: "›";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 8px 0px 8px;
+}
+button {
+    margin-left: 5px;
+}
+
+#clock {
+    font-size: 50px;
+}
